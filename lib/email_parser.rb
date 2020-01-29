@@ -17,3 +17,10 @@ class EmailAddressParser
     @email_addresses
   end
 end
+
+def parse
+  list = []
+  @email_addresses.each {|i| list.include?(i) ? nil : list << i}
+  list
+end
+end
