@@ -16,3 +16,4 @@ class EmailAddressParser
     list.each {|i| @email_addresses << i.strip}
     @email_addresses
   end
+end
