@@ -12,15 +12,12 @@
 class EmailAddressParser
   def initialize(str)
     @email_addresses=[]
-    list = str.split(/, | /)
-    list.each {|i| @email_addresses << i.strip}
-    @email_addresses
+
   end
 end
 
 def parse
   list = []
-  @email_addresses.each {|i| list.include?(i) ? nil : list << i}
-  list
+
 end
 end
